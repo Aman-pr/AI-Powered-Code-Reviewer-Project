@@ -3,4 +3,3 @@ huggingface-hub==0.17.3
 groq==0.4.1
 numpy==1.24.3
 requests==2.31.0
-pip install pdfplumber huggingface-hub groq numpy
