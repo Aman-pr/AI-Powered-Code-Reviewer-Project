@@ -90,8 +90,7 @@ The results include:
 - numpy  
 
 ### Install via:
-    pip install -r requirements.txtsample_data/job_description.txt --output-dir results
-
+    pip install -r requirements.txt
 
 ---
 
