@@ -37,7 +37,7 @@ your-repo-name/
    ```bash
    pip install -r requirements.txt
 
-3. Set up API keys::
+3. Set up API keys:
    ```bash
    export HF_API_KEY="your_huggingface_api_key"
    export GROQ_API_KEY="your_groq_api_key"
@@ -46,10 +46,15 @@ your-repo-name/
 ## Usage
 
 ### Single Resume Analysis
-    python resume_analyzer.py analyze --resume sample_data/sample_resume.pdf --job sample_data/job_description.txt --output results/analysis.json
-
+1. Place your resume file and job description file in same folder , then run :
+     ```bash
+  python resume_analyzer.py analyze --resume sample_data/sample_resume.pdf --job sample_data/job_description.txt --output results/analysis.json
 
 ### Batch Resume Analysis
+1. Create a folder (e.g., sample_data/resumes) and add all your resumes (PDFs) there.
+2. Place the job description file (e.g., sample_data/job_description.txt) anywhere.
+3. Run the batch analysis with:
+   ```bash
     python resume_analyzer.py batch --resume-dir ./sample_data/resumes --job sample_data/job_description.txt --output-dir results
 
 
